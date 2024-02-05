@@ -162,7 +162,7 @@ func (peer *Peer) SendHandshakeInitiation(isRetry bool) error {
 		}
 
 		// Wait for a random duration between 200 and 500 milliseconds
-		time.Sleep(time.Duration(randomInt(200, 500)) * time.Millisecond)
+		//time.Sleep(time.Duration(randomInt(200, 500)) * time.Millisecond)
 	}
 
 	err = peer.SendBuffers([][]byte{packet})
